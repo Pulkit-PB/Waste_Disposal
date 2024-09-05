@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Book Delivery</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">BrandName</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>               
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Temp.html">Find a Bin</a></li>
+                <li><a href="suggestion.html">Suggestion</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li><a href="#">Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Section -->
+    <main>
+        <section class="booking-form">
+            <h1>Book a Door-to-Door Delivery</h1>
+            <form action="submit-booking" method="post">
+                <label for="pickup-date">Pickup Date:</label>
+                <input type="date" id="pickup-date" name="pickup-date" required>
+                
+                <label for="pickup-time">Pickup Time:</label>
+                <input type="time" id="pickup-time" name="pickup-time" required>
+                
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" name="quantity" min="1" required>
+                
+                <button type="submit">Book Now</button>
+            </form>
+        </section>
+    </main>
+
+</body>
+</html>
