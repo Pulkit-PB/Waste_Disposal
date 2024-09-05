@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suggestion Window</title>
+    <link rel="stylesheet" href="home.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">BrandName</div>
+            <ul class="nav-links">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">How It Works</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="Temp.html">Find a Bin</a></li>
+                <li><a href="suggestion.html">Suggestion</a></li>
+                <li><a href="donate.html">Donate</a></li>
+                <li class="profile-menu">
+                    <a href="#" class="profile-link">Profile</a>
+                    <div class="dropdown-menu">
+                        <p><span id="username">JohnDoe</span></p>
+                        <p><span id="mobile">9311298561</span></p>
+                        <p>Waste Reward Points: <span id="reward-points">150</span></p>
+                        <a href="#">Track Disposal History</a>
+                        <a href="#">Log Out</a>
+                    </div>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Suggestion Form Section -->
+    <main>
+        <section class="suggestion-form">
+            <div class="form-container">
+                <h2>We Love Any Donations!</h2>
+                <br>
+                <form id="donateForm">
+                    <div class="input-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="email">Your Email</label>
+                        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="amount">Amount</label>
+                        <input type="number" id="amount" name="amount" placeholder="Enter the Amount" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="note">Leave a Note!</label>
+                        <textarea id="note" name="note" rows="5" placeholder="Leave a Note! ^L^" required></textarea>
+                    </div>
+                    <button type="submit">Submit Note</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
